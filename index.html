@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Bobby 💗</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+
+<audio id="bgMusic" src="music.mp3"></audio>
+
+
+<!-- PAGE 1 -->
+<section class="page page1 active">
+    <h1>Bobby 💕<br>It's For You</h1>
+    <button onclick="startLove()">Click Here</button>
+</section>
+
+
+<!-- PAGE 2 -->
+<section class="page page2">
+    <h1 class="valentine">Happy Valentine’s Day</h1>
+    <h2 class="name">BOBBY</h2>
+
+
+    <p class="letter">
+        From the moment you came into my life, everything felt softer,
+        brighter and more meaningful.  
+        These 3 years with you have been the most beautiful part of my journey.
+        Your smile gives me peace, your voice gives me comfort,
+        and your presence gives me strength.
+        Loving you has been the easiest and happiest thing in my life.
+    </p>
+
+
+    <button onclick="goToPage3()">Continue Our Journey 💗</button>
+</section>
+
+
+<!-- PAGE 3 -->
+<section class="page page3">
+    <h1>3 Years of Journey</h1>
+
+
+    <div class="gallery">
+        <img src="img1.jpg" onclick="openModal(this, 'Caption 1')">
+        <img src="img2.jpg" onclick="openModal(this, 'Caption 2')">
+        <img src="img3.jpg" onclick="openModal(this, 'Caption 3')">
+        <img src="img4.jpg" onclick="openModal(this, 'Caption 4')">
+        <img src="img5.jpg" onclick="openModal(this, 'Caption 5')">
+        <img src="img6.jpg" onclick="openModal(this, 'Caption 6')">
+        <img src="img7.jpg" onclick="openModal(this, 'Caption 7')">
+        <img src="img8.jpg" onclick="openModal(this, 'Caption 8')">
+        <img src="img9.jpg" onclick="openModal(this, 'Caption 9')">
+        <img src="img10.jpg" onclick="openModal(this, 'Caption 10')">
+    </div>
+
+
+    <h2 class="promise">
+        I promise to stand by you,
+        to love you endlessly,
+        and to be with you till my very last breath. 💗
+    </h2>
+</section>
+
+
+<!-- IMAGE MODAL -->
+<div id="modal" class="modal">
+    <span onclick="closeModal()">&times;</span>
+    <img id="modalImg">
+    <p id="modalCaption"></p>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
